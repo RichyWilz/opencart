@@ -11,6 +11,7 @@ class Startup extends \Opencart\System\Engine\Controller {
 			if ((substr($result['action'], 0, 6) == 'admin/') && $result['status']) {
 				$this->load->controller(substr($result['action'], 6));
 			}
+			
 		}
 	}
 }
